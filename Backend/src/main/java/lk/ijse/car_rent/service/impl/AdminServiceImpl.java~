@@ -1,0 +1,48 @@
+package lk.ijse.car_rent.service.impl;
+
+import lk.ijse.car_rent.dto.AdminDTO;
+import lk.ijse.car_rent.repo.AdminRepo;
+import lk.ijse.car_rent.service.AdminService;
+import org.modelmapper.ModelMapper;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import javax.transaction.Transactional;
+import java.util.ArrayList;
+
+@Service
+@Transactional
+public class AdminServiceImpl implements AdminService {
+
+    @Autowired
+    private AdminRepo adminRepo;
+
+    @Autowired
+    private ModelMapper mapper;
+
+
+    @Override
+    public void addAdmin(AdminDTO dto) {
+
+    }
+
+    @Override
+    public void deleteAdmin(String id) {
+
+    }
+
+    @Override
+    public AdminDTO searchAdmin(String id) {
+        return null;
+    }
+
+    @Override
+    public ArrayList<AdminDTO> getAllAdmin() {
+        return null;
+    }
+
+    @Override
+    public void updateAdmin(AdminDTO dto) {
+
+    }
+}

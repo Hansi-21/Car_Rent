@@ -1,0 +1,12 @@
+#home{
+    cursor: pointer;
+}
+#navigation{
+    top: 0;
+    height: 60px;
+}
+
+#table{
+    top: 100px;
+    position: absolute;
+}

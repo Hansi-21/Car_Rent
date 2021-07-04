@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="../style/loginPage.css">
+</head>
+
+<body>
+
+<!--Login & Signup Content Start-->
+<section>
+  <div class="container">
+    <div class="user signinBx">
+      <div class="imgBx"><img src="../assets/v.jpg" alt="" /></div>
+    <div class="formBx">
+        <form id="logindata" >
+          <h2>Sign In</h2>
+          <input type="text" name="email" placeholder="Email" />
+          <input type="password" name="password" placeholder="Password" />
+          <h6 id="erromsg"></h6>
+          <input id="loginbtn" type="button" name="" value="Login" />
+          <p class="signup">
+            Don't have an account ?
+            <a href="#" onclick="toggleForm();">Sign Up.</a>
+          </p>
+        </form>
+      </div>
+    </div>
+    <div class="user signupBx">
+      <div class="formBx">
+        <form id="signupdata">
+          <h2>Create an account</h2>
+
+          <input type="email" id="signupemail" name="email" placeholder="Email Address"  />
+          <h6 id="email-error" ></h6>
+          <div class="row">
+              <div class="col-sm">
+                <input type="text" id="nic" name="nic" placeholder="NIC" />
+              </div>
+              <div class="col-sm">
+                <input type="file" id="nic_files" placeholder="" />
+              </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm">
+              <input type="text" id="license" name="dnum" placeholder="License Number" />
+            </div>
+            <div class="col-sm">
+              <input type="file" id="license_files" placeholder="" />
+            </div>
+          </div>
+
+
+          <input type="text" id="address" name="address" placeholder="Address" />
+
+          <input type="text" id="contact" name="contact" placeholder="Contact Number" />
+
+          <input type="password"   name="password" id="password" placeholder="Create Password" />
+
+          <input type="password" id="confirmpassword" placeholder="Confirm Password" />
+
+          <h6 id="error"></h6>
+          <input id="signup" type="button" name="" value="Sign Up" />
+          <p class="signup">
+            Already have an account ?
+            <a href="#" onclick="toggleForm();">Sign in.</a>
+          </p>
+        </form>
+      </div>
+      <div class="imgBx"><img src="../assets/fgf.jpg" alt="" /></div>
+    </div>
+  </div>
+</section>
+<!--Login & Signup Content Start-->
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="../js/loginpage.js"></script>
+
+</html>
